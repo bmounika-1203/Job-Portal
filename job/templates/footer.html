@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="mt-5" style="background-color: black; width: 100%;height: 350px">
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 mt-3">
+			<h3 class="text-white">Contact Information</h3>
+			<p style="color: yellow; font-size: 18px"><i class="fa fa-map-marker text-danger"></i>    Dwaraka Nagar A sector Visakhapatnam</p>
+			<p style="color: yellow; font-size: 18px"><i class="fa fa-envelope text-danger"></i>    bandimounika999@gmail.com</p>
+			<p style="color: yellow; font-size: 18px"><i class="fa fa-mobile text-danger"></i>    P: +91 8688477420</p>
+			<p style="color: yellow; font-size: 18px"><i class="fa fa-globe text-danger"></i>    W: www.mnsdksoftwares.com</p>
+		</div>
+		<div class="col-md-4 mt-3">
+			<h3 class="text-white">Online Placements</h3>
+			<p style="color: yellow; font-size: 18px">Actually I have an idea to implement using machine learning Algorithms by taking many training data sets.</p>
+		</div>
+		<div class="col-md-4 mt-3">
+			<h3 class="text-white">NewsLetter</h3>
+			<p style="color: yellow; font-size: 18px">If you want to know any extra information then please send your email address.</p>
+			<form method="POST" class="form-inline">
+				{% csrf_token %}
+				  <input type="email" name="emailid" placeholder="Email ID" required class="form-control mr-2">
+				  <input type="submit" value="Send" class="btn btn-primary">
+				
+			</form>
+				}
+
+		</div>
+		
+	</div>
+</div>
